@@ -1,0 +1,95 @@
+.gamescreen-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.words-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	border: 1px solid #000;
+	border-radius: 5px;
+	width: 800px;
+}
+.welcome-button {
+	padding: 10px;
+	border: 1px solid #66b3ff;
+	color: #66b3ff;
+	border-radius: 5px;
+	background-color: #fff;
+	width: 80px;
+	margin: 10px;
+}
+/*when a word element is clicked, apply the following style to the topping container */
+li.active-element {
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding: 15px;
+	margin: 15px;
+	align-items: center;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	color: #8c8c8c;
+	font-weight: 700;
+}
+.toppings-list-element {
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	padding: 15px;
+	margin: 15px;
+	align-items: center;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	cursor: pointer;
+	font-weight: 700;
+}
+
+.incorrect-word {
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding: 15px;
+	margin: 15px;
+	align-items: center;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	color: #ff0000;
+}
+.incorrect-word::before {
+	content: "Bad";
+	color: #ff9999;
+	position: relative;
+	left: 50%;
+	top: -20px;
+}
+
+.correct-word {
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding: 15px;
+	margin: 15px;
+	align-items: center;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	color: #008000;
+}
+.correct-word::before {
+	content: 'Good';
+	color: #99e699;
+	position: relative;
+	left: 50%;
+	top: -20px;
+}
